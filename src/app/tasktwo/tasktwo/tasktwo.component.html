@@ -1,0 +1,36 @@
+<p>task-two Display 40 prodects</p>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-4">
+      <button class="form-control" (click)="fourDisplay()">4 display</button>
+    </div>
+    <div class="col-4">
+      <button class="form-control" (click)="twoDisplay()">2 display</button>
+    </div>
+    <div class="col-4">
+      <select class="form-control">
+        <option value="">High-low</option>
+        <option value="">Low-High</option>
+        <option value="">Rating</option>
+        <option value="">Distance</option>
+      </select>
+    </div>
+  </div>
+</div>
+<br />
+<div class="container">
+  <div class="row">
+    <div
+      class="card crad1"
+      [ngClass]="objExp"
+      *ngFor="let in of display(40); let i = index"
+    >
+      <div>product name</div>
+    </div>
+    <!-- <div class="card col-6">
+      <div>product name</div>
+    </div> -->
+  </div>
+</div>
+<div></div>

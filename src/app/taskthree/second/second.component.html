@@ -1,0 +1,34 @@
+<div class="container">
+    <div class="card">
+        <br>
+        <div>
+            <label> Enter Timer Limit :</label> <input type="phone" name="" id="" [(ngModel)]="timeLeft1"
+                (keyup)="EnterTimer()">
+        </div>
+        <br>
+        <div class="row">
+            <!-- <div class="col-3">
+                {{timeLeft1}}
+            </div> -->
+            <div class="col-2">
+                <button class="btn btn-primary" (click)="startTimer()">Start/Pause</button>
+            </div>
+            &nbsp;&nbsp;
+            <div class="col-2">
+                <button class="btn btn-danger" (click)="resetTimer()">reset</button>
+            </div>
+        </div>
+
+        <div>
+            <div *ngFor="let a of pausedArray">
+                paused At {{a}}
+            </div>
+            <p>
+
+            </p>
+        </div>
+
+
+
+    </div>
+</div>

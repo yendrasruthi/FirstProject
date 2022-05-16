@@ -1,0 +1,18 @@
+<div class="container">
+    <div class="row">
+        <div class="col-5">
+            <app-first [item]="timeLeft1"></app-first>
+        </div>
+        <div class="col-7">
+            <app-second (nextStep)="startTimer()" (enterValue)="assignTime($event)" (clearTimer)="clearTimer()"></app-second>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-6">
+            <app-three [timerDisplayList]="timerDisplayList"></app-three>
+        </div>
+        <div class="col-6">
+            <app-four [startPauseCountr]="startPauseCountr"></app-four>
+        </div>
+    </div>
+</div>
