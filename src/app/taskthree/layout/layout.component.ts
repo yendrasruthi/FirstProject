@@ -53,8 +53,7 @@ export class LayoutComponent implements OnInit {
 
   }
   EnterTimer(timeLeft: any) {
-    console.log(timeLeft.value)
-    this.timeLeft = timeLeft.value;
+        this.timeLeft = timeLeft.value;
     this.timeLeft1 = this.timeLeft;
     this.currentItem = this.timeLeft1;
     // this.nextStep.emit(this.timeLeft1);

@@ -10,10 +10,10 @@ export class ScrollingtaskComponent implements OnInit {
   // @HostListener('window:scroll', ['$event'])
   @HostListener("window:scroll", [])
   onScroll(): void {
-    console.log("je;")
+  
     if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
       // you're at the bottom of the page
-      console.log("hello")
+     
     }
   }
   items = Array.from({ length: 10 }).map((_, i) => `Item #${i}`);
@@ -22,7 +22,7 @@ export class ScrollingtaskComponent implements OnInit {
   ngOnInit(): void {
   }
   nextBatch($event: any) {
-    // console.log("hello")
+
     this.items = Array.from({ length: 10 }).map((_, i) => `Item #${i}`);
   }
 
@@ -33,12 +33,9 @@ export class ScrollingtaskComponent implements OnInit {
   }
 
   buttonClick(i: number) {
-    console.log(i)
-    if (i % 10 === 0) {
+     if (i % 10 === 0) {
       alert("click Value is" + i)
     } else {
-      // console.log(i)
-
-    }
+         }
   }
 }

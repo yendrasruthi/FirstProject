@@ -32,7 +32,6 @@ export class UtillService {
 
 
   setCount(item: any) {
-    console.log(item)
     this.count = item;
     this.timeCount.next(this.count);
   }

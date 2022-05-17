@@ -37,15 +37,13 @@ export class SecondComponent implements OnInit {
   //       }
   //     }, 1000)
   //   } else if (this.startPause == true) {
-  //     console.log(this.timeLeft1)
+  //    
   //     this.pausedArray.push(this.timeLeft1)
   //     this.pauseCount++
   //     this.listOftimeToDisplay.push("paused At" + new Date())
   //     this.pauseTimer();
   //   }
-  //   console.log(this.startCount)
-  //   console.log(this.pauseCount)
-  //   console.log(this.listOftimeToDisplay)
+ 
 
   // }
   EnterTimer() {

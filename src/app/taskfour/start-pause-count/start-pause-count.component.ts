@@ -12,8 +12,7 @@ export class StartPauseCountComponent implements OnInit {
 
   ngOnInit(): void {
     this.utilService.startPauseCount.subscribe(timerListItems => {
-      console.log(timerListItems)
-      this.countsList = timerListItems;
+          this.countsList = timerListItems;
     })
   }
 

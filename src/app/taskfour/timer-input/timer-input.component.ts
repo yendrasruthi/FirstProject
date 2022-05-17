@@ -41,7 +41,7 @@ export class TimerInputComponent implements OnInit {
         }
       }, 1000)
     } else if (this.startPause == true) {
-      console.log(this.timeLeft1)
+     
       this.pausedArray.push(this.timeLeft1)
       this.pauseCount++
       this.listOftimeToDisplay.push("paused At" + new Date())
